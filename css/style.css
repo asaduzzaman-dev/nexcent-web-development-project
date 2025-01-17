@@ -108,7 +108,3 @@ body {
     border-radius: 50% !important;
     background-color: var(--primary-color) !important;
 }
-
-.caro-indicator> .active{
-    opacity: 100%;
-}
