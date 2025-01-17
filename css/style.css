@@ -25,7 +25,7 @@ body {
     transition: all 0.3s ease-in-out;
 }
 
-.nav-item> .active {
+.nav-item>.active {
     font-weight: 500;
     color: var(--primary-color) !important;
 }
@@ -112,6 +112,8 @@ body {
     border-radius: 50% !important;
     background-color: var(--primary-color) !important;
 }
+
+/* client section starts */
 
 .clients-section {
     margin-bottom: 2.5rem;
