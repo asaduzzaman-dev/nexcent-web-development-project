@@ -1,86 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="Nexcent"
-      content=" Project Nexcent| Front-End Developer | Asad"
-    />
-    <meta
-      name="description"
-      content="Explore Asad's Nexcent web development project, using HTML, CSS and Bootstrap for creating dynamic user interfaces."
-    />
-    <meta
-      name="keywords"
-      content="web developer, HTML, CSS, Bootstrap, portfolio, Nexcent, front-end development, Asad"
-    />
-    <meta name="author" content="Md. Asaduzzaman" />
-    <meta name="robots" content="index, follow" />
-    <!-- bootstrap link here -->
-    <link rel="stylesheet" href="./css/bootstrap.min.css" />
 
-    <!-- css links here -->
-    <link rel="stylesheet" href="./css/style.css" />
-    <title>Nexcent</title>
-  </head>
-  <body>
-    <!-- --Header Section Start-- -->
-    <header>
-      <!-- navbar start -->
-      <nav class="navbar navbar-expand-lg custom-Nav py-4">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-              <img src="./asset/Logo/Logo.svg" class="img-fluid" alt="" />
-            </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-3">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Service</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Feature</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Product</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Testimonial</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">FAQ</a>
-              </li>
-                </ul>
-              </li>
-            </ul>
-            <form class="d-flex navbar-btn">
-              <button class="login-btn" type="submit">
-                Login
-              </button>
-              <button class="btn signup-btn text-white" type="submit">
-                Sign Up
-              </button>
-            </form>
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="Nexcent" content=" Project Nexcent| Front-End Developer | Asad" />
+  <meta name="description"
+    content="Explore Asad's Nexcent web development project, using HTML, CSS and Bootstrap for creating dynamic user interfaces." />
+  <meta name="keywords"
+    content="web developer, HTML, CSS, Bootstrap, portfolio, Nexcent, front-end development, Asad" />
+  <meta name="author" content="Md. Asaduzzaman" />
+  <meta name="robots" content="index, follow" />
+  <!-- bootstrap link here -->
+  <link rel="stylesheet" href="./css/bootstrap.min.css" />
+
+  <!-- css links here -->
+  <link rel="stylesheet" href="./css/style.css" />
+  <title>Nexcent</title>
+  <link rel="icon" type="image/x-icon" href="./asset/icons/Icon.svg">
+</head>
+
+<body>
+  <!-- --Header Section Start-- -->
+  <header>
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-lg custom-Nav py-4">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="./asset/Logo/Logo.svg" class="img-fluid" alt="" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Service</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Feature</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Product</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Testimonial</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">FAQ</a>
+            </li>
+          </ul>
+          </li>
+          </ul>
+          <form class="d-flex navbar-btn">
+            <button class="login-btn" type="submit">
+              Login
+            </button>
+            <button class="btn signup-btn text-white" type="submit">
+              Sign Up
+            </button>
+          </form>
         </div>
-      </nav>
-    </header>
-    <!-- <--Header Section End-- -->
-    <!-- js script here -->
-    <script src="./js/bootstrap.min.js"></script>
-  </body>
+      </div>
+    </nav>
+  </header>
+  <!-- <--Header Section End-- -->
+  <main>
+    <!-- hero section starts -->
+    <section class="heroSection">
+      <div class="container">
+        <!-- carousel section -->
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+              aria-current="true" aria-label="Slide 1" class="caro-indicator active"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+              aria-label="Slide 2" class="caro-indicator"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+              aria-label="Slide 3" class="caro-indicator"></button>
+          </div>
+          <div class="carousel-inner">
+            <!-- first carousel item starts-->
+            <div class="carousel-item active">
+              <div class="row align-items-center hero-section-row">
+                <div class="col-md-8">
+                  <div class="heroContent">
+                    <h1 class="mb-4">Lessons and insights </br>
+                      <span class="textHighlight">from 8 years</span>
+                    </h1>
+                    <p class="mb-4">Where to grow your business as a photographer: site or social media?</p>
+                    <button class="btn regi-btn text-white" type="submit">Register</button>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div>
+                    <img src="./asset/images/hero-Image.svg" class="img-fluid" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+              <!-- first carousel item ends -->
+              <!-- second carousel item starts -->
+            <div class="carousel-item">
+              <div class="row align-items-center hero-section-row">
+                <div class="col-md-8">
+                  <div class="heroContent">
+                    <h1 class="mb-4">Lessons and insights </br>
+                      <span class="textHighlight">from 8 years</span>
+                    </h1>
+                    <p class="mb-4">Where to grow your business as a photographer: site or social media?</p>
+                    <button class="btn regi-btn text-white" type="submit">Register</button>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div>
+                    <img src="./asset/images/hero-Image.svg" class="img-fluid" alt="">
+                  </div>
+                </div>
+              </div>
+            </div> 
+              <!-- second carousel item ends -->
+              <!-- third carousel item starts -->
+            <div class="carousel-item">
+              <div class="row align-items-center hero-section-row">
+                <div class="col-md-8">
+                  <div class="heroContent">
+                    <h1 class="mb-4">Lessons and insights </br>
+                      <span class="textHighlight">from 8 years</span>
+                    </h1>
+                    <p class="mb-4">Where to grow your business as a photographer: site or social media?</p>
+                    <button class="btn regi-btn text-white" type="submit">Register</button>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div>
+                    <img src="./asset/images/hero-Image.svg" class="img-fluid" alt="">
+                  </div>
+                </div>
+              </div>
+            </div> 
+            <!-- third carousel item ends -->
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon control" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon control" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- hero section ends -->
+  </main>
+
+  <!-- js script here -->
+  <script src="./js/bootstrap.min.js"></script>
+</body>
+
 </html>

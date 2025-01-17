@@ -1,57 +1,114 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:wght@300;400;500;600;700;900&family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&family=Space+Grotesk:wght@300..700&display=swap');
 
-:root{
-    --primary-color: #28CB8B;
+:root {
+    --primary-color: #4CAF4F;
     --secondary-color: #263238;
     --info-color: #2194f3;
     --bg-color-one: #F5F7FA;
     --text-color: #18191F;
+    --heading-color: #4D4D4D;
+    --pText-color: #717171;
 }
 
-body{
+body {
     font-family: "Poppins", serif;
+    font-size: 16px;
 }
 
-.custom-nav{
+.custom-nav {
     background-color: var(--bg-color-one);
 }
 
-.navbar-btn{
+.navbar-btn {
     gap: 0.875rem;
 }
-.navbar-btn button{
+
+.navbar-btn button {
     font-size: 0.875rem;
 }
 
-.login-btn{
+.login-btn {
     padding: .625rem 1.25rem;
     border: none;
     color: var(--primary-color);
 }
 
-.signup-btn{
+.signup-btn {
     border: 1px solid;
     padding: .625rem 1.25rem;
-    border: none;
-    border-radius: 0.375rem;
+    border-radius: 0.25rem;
     background-color: var(--primary-color);
     transition: all 0.3s ease-in-out;
 }
 
-.signup-btn:hover{
+.signup-btn:hover {
     background-color: #237D31;
 }
 
-.nav-item a{
+.nav-item a {
     color: var(--text-color);
-    line-height: 24%;
+    line-height: 1.5rem;
     transition: all 0.3s ease-in-out;
 }
 
-.nav-item> .active{
+.nav-item>.active {
     font-weight: 500;
 }
 
-.nav-item a:hover{
+.nav-item a:hover {
     font-weight: 500;
+}
+
+/* Hero Section Starts */
+
+.heroSection {
+    background-color: var(--bg-color-one);
+    margin-bottom: 2.5rem;
+}
+
+.hero-section-row{
+    min-height: 84vh;
+}
+
+.heroContent h1 {
+    font-size: 4rem;
+    font-weight: 600;
+    line-height: 4.75rem;
+    color: var(--heading-color);
+}
+
+.heroContent p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: var(--pText-color);
+}
+
+.textHighlight {
+    color: var(--primary-color);
+}
+
+.regi-btn {
+    font-size: 1rem;
+    border: 1px solid;
+    padding: .625rem 1.25rem;
+    border-radius: 0.25rem;
+    background-color: var(--primary-color);
+    transition: all 0.3s ease-in-out;
+}
+
+.regi-btn:hover {
+    color: var(--secondary-color);
+    background-color: #237D31;
+}
+
+.caro-indicator {
+    width: 0.625rem !important;
+    height: 0.625rem !important;
+    opacity: 30%;
+    border-radius: 50% !important;
+    background-color: var(--primary-color) !important;
+}
+
+.caro-indicator> .active{
+    opacity: 100%;
 }
