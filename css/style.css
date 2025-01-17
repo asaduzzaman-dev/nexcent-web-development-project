@@ -19,6 +19,21 @@ body {
     background-color: var(--bg-color-one);
 }
 
+.nav-item a {
+    color: var(--text-color);
+    line-height: 1.5rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-item> .active {
+    font-weight: 500;
+    color: var(--primary-color) !important;
+}
+
+.nav-item a:hover {
+    color: var(--primary-color);
+}
+
 .navbar-btn {
     gap: 0.875rem;
 }
@@ -42,21 +57,9 @@ body {
 }
 
 .signup-btn:hover {
-    background-color: #237D31;
-}
-
-.nav-item a {
-    color: var(--text-color);
-    line-height: 1.5rem;
-    transition: all 0.3s ease-in-out;
-}
-
-.nav-item>.active {
-    font-weight: 500;
-}
-
-.nav-item a:hover {
-    font-weight: 500;
+    background: transparent;
+    color: var(--primary-color) !important;
+    border: 1px solid var(--primary-color);
 }
 
 /* Hero Section Starts */
@@ -66,7 +69,7 @@ body {
     margin-bottom: 2.5rem;
 }
 
-.hero-section-row{
+.hero-section-row {
     min-height: 84vh;
 }
 
@@ -97,8 +100,9 @@ body {
 }
 
 .regi-btn:hover {
-    color: var(--secondary-color);
-    background-color: #237D31;
+    background: transparent;
+    color: var(--primary-color) !important;
+    border: 1px solid var(--primary-color);
 }
 
 .caro-indicator {
@@ -107,4 +111,12 @@ body {
     opacity: 30%;
     border-radius: 50% !important;
     background-color: var(--primary-color) !important;
+}
+
+.clients-section {
+    margin-bottom: 2.5rem;
+}
+
+.clients-brand-logo img {
+    padding: 0 1.562rem;
 }
