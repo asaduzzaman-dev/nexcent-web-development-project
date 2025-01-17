@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="Nexcent" content=" Project Nexcent| Front-End Developer | Asad" />
+    <meta
+      name="Nexcent"
+      content=" Project Nexcent| Front-End Developer | Asad"
+    />
     <meta
       name="description"
       content="Explore Asad's Nexcent web development project, using HTML, CSS and Bootstrap for creating dynamic user interfaces."
@@ -15,16 +18,69 @@
     <meta name="author" content="Md. Asaduzzaman" />
     <meta name="robots" content="index, follow" />
     <!-- bootstrap link here -->
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
 
     <!-- css links here -->
-     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Nexcent</title>
   </head>
   <body>
-    <!-- <--Header Section Starts-- -->
-    <!-- <--Header Section Ends-- -->
+    <!-- --Header Section Start-- -->
+    <header>
+      <!-- navbar start -->
+      <nav class="navbar navbar-expand-lg custom-Nav py-4">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+              <img src="./asset/Logo/Logo.svg" class="img-fluid" alt="" />
+            </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Service</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Feature</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Product</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Testimonial</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">FAQ</a>
+              </li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex navbar-btn">
+              <button class="login-btn" type="submit">
+                Login
+              </button>
+              <button class="btn signup-btn text-white" type="submit">
+                Sign Up
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- <--Header Section End-- -->
     <!-- js script here -->
-     <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
   </body>
 </html>
